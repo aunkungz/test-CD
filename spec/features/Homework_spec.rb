@@ -46,6 +46,8 @@ describe 'Create Test', js: true do
 
     #Destroy
     click_link("Destroy")
+    expect(page).to have_content("destroyed.")
+
     # sleep(1)
     # save_screenshot("/home/aunz/Desktop/test4.jpg")
 
