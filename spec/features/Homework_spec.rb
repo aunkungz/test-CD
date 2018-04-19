@@ -21,23 +21,23 @@ describe 'Create Test', js: true do
     expect(Lesson2A.first.string_test).to eq 'John'
     expect(Lesson2A.first.integer_test).to eq 1111
     click_link("Back")
-    sleep(1)
-    save_screenshot("/home/aunz/Desktop/test1.jpg")
+    # sleep(1)
+    # save_screenshot("/home/aunz/Desktop/test1.jpg")
 
     #Show
     click_link("Show")
     expect(Lesson2A.first.boolean_test).to eq false
     click_link("Back")
-    sleep(1)
-    save_screenshot("/home/aunz/Desktop/test2.jpg")
+    # sleep(1)
+    # save_screenshot("/home/aunz/Desktop/test2.jpg")
 
     #Edit
     click_link('Edit')
     fill_in('String test', with: 'Prayuth')
     check('lesson2_a[boolean_test]')
     find('[name="commit"]').click
-    sleep(1)
-    save_screenshot("/home/aunz/Desktop/test3.jpg")
+    # sleep(1)
+    # save_screenshot("/home/aunz/Desktop/test3.jpg")
     click_link("Back")
 
     click_link("Show")
@@ -46,8 +46,8 @@ describe 'Create Test', js: true do
 
     #Destroy
     click_link("Destroy")
-    sleep(1)
-    save_screenshot("/home/aunz/Desktop/test4.jpg")
+    # sleep(1)
+    # save_screenshot("/home/aunz/Desktop/test4.jpg")
 
     # click_link('New Lesson2 A')
     # fill_in('String test', with: 'John')
